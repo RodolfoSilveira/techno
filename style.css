@@ -77,6 +77,18 @@ body {
   align-items: end;
   grid-gap: 50px;
   padding: 50px 50px 50px 0;
+  animation: fadeIn .3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3D(50px, 0, 0);
+  }
+  to {
+    
+    transform: translate3D(0, 0, 0);
+  }
 }
 
 .modal_img {
@@ -133,4 +145,17 @@ body {
 
 .avaliacao_usuario {
   font-weight: bold;
+}
+
+.modal_fechar {
+  border-radius: 50%;
+  border: 2px solid #000;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .1), 0 4px 10px rgba(0, 0, 0, .2);
+  cursor: pointer;
 }
